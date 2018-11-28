@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BazaKlientow" Class="DataBaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-N72L5PJ;Initial Catalog=BazaKlientow;Integrated Security=True" SettingsObjectName="WarstwaUslug.Properties.Settings" SettingsPropertyName="BazaKlientowConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.DaneSzczegolne" Member="DaneSzczegolne">
+    <Type Name="DaneSzczegolne">
+      <Column Name="IDDanychSzczegolnych" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDKlienta" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Miasto" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Ulica" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NumerMieszkania" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Klient_DaneSzczegolne" Member="Klient" ThisKey="IDDanychSzczegolnych" OtherKey="IDKlienta" Type="Klient" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Klient" Member="Klient">
+    <Type Name="Klient">
+      <Column Name="IDKlienta" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Imie" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Nazwisko" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="wiek" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Klient_DaneSzczegolne" Member="DaneSzczegolne" ThisKey="IDKlienta" OtherKey="IDDanychSzczegolnych" Type="DaneSzczegolne" Cardinality="One" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,7 @@
+E:\Zdanie_4_2\WarstwaUslug\bin\Debug\WarstwaUslug.dll.config
+E:\Zdanie_4_2\WarstwaUslug\bin\Debug\WarstwaUslug.dll
+E:\Zdanie_4_2\WarstwaUslug\bin\Debug\WarstwaUslug.pdb
+E:\Zdanie_4_2\WarstwaUslug\obj\Debug\WarstwaUslug.csproj.CoreCompileInputs.cache
+E:\Zdanie_4_2\WarstwaUslug\obj\Debug\WarstwaUslug.dll
+E:\Zdanie_4_2\WarstwaUslug\obj\Debug\WarstwaUslug.pdb
+E:\Zdanie_4_2\WarstwaUslug\obj\Debug\WarstwaUslug.csprojResolveAssemblyReference.cache

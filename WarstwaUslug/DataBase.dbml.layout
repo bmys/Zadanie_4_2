@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataBase">
+  <DataContextMoniker Name="/DataBaseDataContext" />
+  <nestedChildShapes>
+    <classShape Id="f9d35415-dc4b-4fca-b4b6-98271c0c3355" absoluteBounds="0.75, 1.375, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DataBaseDataContext/DaneSzczegolne" />
+      <nestedChildShapes>
+        <elementListCompartment Id="224606ef-1765-498a-a906-e09816984813" absoluteBounds="0.765, 1.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ac25fac5-a9f2-42af-a2ab-e6de61ef219f" absoluteBounds="4.5, 2, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataBaseDataContext/Klient" />
+      <nestedChildShapes>
+        <elementListCompartment Id="03ae0b6a-d823-4695-91be-0867cac946b5" absoluteBounds="4.515, 2.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.5 : 2.57294840494792); (2.75 : 2.57294840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataBaseDataContext/Klient/Klient_DaneSzczegolne" />
+      <nodes>
+        <classShapeMoniker Id="ac25fac5-a9f2-42af-a2ab-e6de61ef219f" />
+        <classShapeMoniker Id="f9d35415-dc4b-4fca-b4b6-98271c0c3355" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
