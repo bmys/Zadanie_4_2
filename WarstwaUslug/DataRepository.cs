@@ -99,6 +99,27 @@ namespace WarstwaUslug
             }
         }
 
+
+        public static void UpdateDaneSzczegolneKlienta(DaneSzczegolne dane)
+        {
+            DaneSzczegolne daneDoZmiany = dataContext.DaneSzczegolne.Single(r => r.IDDanychSzczegolnych == dane.IDDanychSzczegolnych);
+
+
+            daneDoZmiany.IDKlienta = dane.IDKlienta;
+            daneDoZmiany.Miasto = dane.Miasto;
+            daneDoZmiany.Ulica = dane.Ulica;
+            daneDoZmiany.NumerMieszkania = dane.NumerMieszkania;
+
+            try
+            {
+                dataContext.SubmitChanges();
+            }
+            catch (Exception)
+            {
+
+                
+            }
+        }
   
 
 

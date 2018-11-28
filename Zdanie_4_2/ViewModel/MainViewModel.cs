@@ -197,7 +197,7 @@ namespace Zdanie_4_2.ViewModel
         public DelegateCommand DeleteDaneSzczegolne { get; private set; }
         public DelegateCommand AddKlientWindowOpen { get; private set; }
         public DelegateCommand AddNewKlient { get; private set; }
-
+        public DelegateCommand UpdateDane { get; private set; }
         /// <summary>
         /// Konstruktor MeinViewModel
         /// </summary>
@@ -213,7 +213,7 @@ namespace Zdanie_4_2.ViewModel
             DeleteDaneSzczegolne = new DelegateCommand(DeleteDaneSzczegolneMetoda);
             AddKlientWindowOpen = new DelegateCommand(AddKlientWindowOpenExecute);
             AddNewKlient = new DelegateCommand(AddKlient);
-            
+            UpdateDane = new DelegateCommand(UpdateDaneSzczegolne);
 
 
 
@@ -286,10 +286,16 @@ namespace Zdanie_4_2.ViewModel
             else MessageBox.Show("Złe dane", "Błąd");
         }
 
+        private void UpdateDaneSzczegolne()
+        {
+            Task.Run(() => { DataRepository.UpdateDaneSzczegolneKlienta(obecneDane); });
+        }
 
 
-      
- 
+
+
+
+
 
 
 

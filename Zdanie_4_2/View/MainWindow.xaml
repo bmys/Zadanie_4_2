@@ -55,6 +55,13 @@
         </ListBox>
         <Button Command="{Binding DeleteDaneSzczegolne}" Content="Usun zaznaczone dane" Grid.Column="1" HorizontalAlignment="Left" Margin="10,300,0,0" VerticalAlignment="Top" Width="277" Height="27"/>
         <Button Command="{Binding AddKlientWindowOpen}" Content="Tworzenie Klienta" HorizontalAlignment="Left" Margin="10,300,0,0" VerticalAlignment="Top" Width="178" Height="24"/>
+        <Label Content="Nowe Miasto" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="#FFFDFAFA"/>
+        <TextBox Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" Text="{Binding ObecneDaneSzczegolne.Miasto}" VerticalAlignment="Top" Width="256"/>
+        <Label Content="Nowa ulica" Grid.Column="2" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" Foreground="#FFF7EFEF"/>
+        <TextBox Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="10,100,0,0" TextWrapping="Wrap" Text="{Binding ObecneDaneSzczegolne.Ulica}" VerticalAlignment="Top" Width="256"/>
+        <Label Content="Nowa Ulica" Grid.Column="2" HorizontalAlignment="Left" Margin="10,128,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.763,0.192" Foreground="#FFFDF8F8"/>
+        <TextBox Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="10,154,0,0" TextWrapping="Wrap" Text="{Binding ObecneDaneSzczegolne.NumerMieszkania}" VerticalAlignment="Top" Width="256"/>
+        <Button Command="{Binding UpdateDane}" Content="Zapisz zmiany" Grid.Column="2" HorizontalAlignment="Left" Margin="10,332,0,0" VerticalAlignment="Top" Width="256" Height="29"/>
 
 
 
