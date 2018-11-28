@@ -18,6 +18,9 @@
 
 
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="DepartmentTlo2.jpg"/>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="3*"/>
@@ -25,13 +28,13 @@
         </Grid.ColumnDefinitions>
         <Button Command="{Binding GetAllData}" Content="Pobierz Dane" Grid.Column="1" HorizontalAlignment="Left" Margin="10,332,0,0" VerticalAlignment="Top" Width="277" RenderTransformOrigin="-0.42,-0.225" Height="27"/>
         <Button Command="{Binding AddDaneSzczegolne}" Content="Dodaj Dane" HorizontalAlignment="Left" Margin="10,332,0,0" VerticalAlignment="Top" Width="178" Height="27"/>
-        <Label Content="Id Klienta" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Id Klienta" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="#FFFDF8F8"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" Text="{Binding NewKlientID}" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Miasto" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.543,0"/>
+        <Label Content="Miasto" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.543,0" Foreground="#FFF7F6F6"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="10,95,0,0" TextWrapping="Wrap" Text="{Binding NewMiasto}" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Ulica" HorizontalAlignment="Left" Margin="10,128,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ulica" HorizontalAlignment="Left" Margin="10,128,0,0" VerticalAlignment="Top" Foreground="#FFF5F1F1"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="10,154,0,0" TextWrapping="Wrap" Text="{Binding NewUlica}" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Numer Mieszkania" HorizontalAlignment="Left" Margin="10,187,0,0" VerticalAlignment="Top"/>
+        <Label Content="Numer Mieszkania" HorizontalAlignment="Left" Margin="10,187,0,0" VerticalAlignment="Top" Foreground="#FFFDFCFC"/>
         <TextBox HorizontalAlignment="Left" Height="24" Margin="10,213,0,0" TextWrapping="Wrap" Text="{Binding NewNumerMieszkania}" VerticalAlignment="Top" Width="120"/>
 
 

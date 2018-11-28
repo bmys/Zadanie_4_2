@@ -11,13 +11,23 @@
         <ViewModel:MainViewModel/>
     </Window.DataContext>
     <Grid>
-        <Label Content="Imie klienta" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="24"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="DepartmentTlo2.jpg"/>
+        </Grid.Background>
+        <Label Content="Imie klienta" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="24" Foreground="#FFF7F3F3"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="10,39,0,0" TextWrapping="Wrap" Text="{Binding NewImieKlienta}" VerticalAlignment="Top" Width="272"/>
-        <Label Content="Nazwisko Klienta" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nazwisko Klienta" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" Foreground="#FFFFFEFE"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="10,98,0,0" TextWrapping="Wrap" Text="{Binding NewNazwiskoKlienta}" VerticalAlignment="Top" Width="272"/>
-        <Label Content="Wiek" HorizontalAlignment="Left" Margin="10,126,0,0" VerticalAlignment="Top"/>
+        <Label Content="Wiek" HorizontalAlignment="Left" Margin="10,126,0,0" VerticalAlignment="Top" Foreground="#FFFFFCFC"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="10,157,0,0" TextWrapping="Wrap" Text="{Binding NewWiekKlienta}" VerticalAlignment="Top" Width="272"/>
-        <Button Command="{Binding AddNewKlient}" Content="Dodaj" HorizontalAlignment="Left" Margin="81,209,0,0" VerticalAlignment="Top" Width="123" Height="25"/>
+        <Button Command="{Binding AddNewKlient}" Content="Dodaj" HorizontalAlignment="Left" Margin="81,209,0,0" VerticalAlignment="Top" Width="123" Height="25">
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF0C0C0C" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+        </Button>
 
 
 
